@@ -1,0 +1,20 @@
+arielleb 205925704
+
+############### CODE FILES ###############
+
+main.py - trains or loads a model and evaluates it by accuracy and loss of each iteration
+visualize_preformance.py - a class of functions for generating various matplotlib plots to evaluate  model performance
+advarsarial.py - creates and shows advarsarial examples for the model
+
+
+############### USAGE INSTRUCTIONS ###############
+
+To measure model performance, one must load it by changing PATH_TO_LOAD to the desired path and define is_trained = False
+Otherwise, the code will train a model based on training set. One must provide a PATH_TO_SAVE and define is_trained = True
+All hyperparameters can be defined (epochs, lr, batch_size)
+The code will print the current accuracy and loss of each epoch
+
+To generate and advarsarial example one must provide to the function generate_adversarial a path to a trained model.
+
+The script in "main.py" collects lists of accuracy and loss value per epoch, those can be provided to the functions
+in "visualize_performance.py" to create plots.
